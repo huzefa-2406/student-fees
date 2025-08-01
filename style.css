@@ -1,0 +1,49 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #dbe6f6, #c5796d);
+  padding: 50px;
+}
+
+.form-container, .search-container {
+  background-color: white;
+  max-width: 70%;
+  margin: auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}

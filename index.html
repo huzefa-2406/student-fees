@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Fee Payment Details</h2>
+    <form id="studentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="std">Standard (STD):</label>
+      <input type="number" id="std" required>
+
+      <label for="div">Division (DIV):</label>
+      <select id="div" required>
+        <option value="">Select Division</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+
+      <label for="roll">Roll No:</label>
+      <input type="number" id="roll" required>
+
+      <label for="fee">Fee Paid:</label>
+      <input type="number" id="fee" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="search-container">
+    <h2>Generate Receipt</h2>
+    <form id="searchForm">
+      <label for="searchName">Name:</label>
+      <input type="text" id="searchName" required>
+
+      <label for="searchRoll">Roll No:</label>
+      <input type="number" id="searchRoll" required>
+
+      <label for="searchStd">Standard (STD):</label>
+      <input type="number" id="searchStd" required>
+
+      <label for="searchDiv">Division:</label>
+      <select id="searchDiv" required>
+        <option value="">Select Division</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+
+      <button type="submit">Search & Generate PDF</button>
+    </form>
+  </div>
+
+  <div id="receipt" style="display: none;"></div>
+  <script src="script.js"></script>
+</body>
+</html>
